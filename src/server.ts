@@ -6,6 +6,7 @@ import { completionRoutes } from "./routes/chat-completions/route"
 import { embeddingRoutes } from "./routes/embeddings/route"
 import { messageRoutes } from "./routes/messages/route"
 import { modelRoutes } from "./routes/models/route"
+import { responsesRoutes } from "./routes/responses/route"
 import { tokenRoute } from "./routes/token/route"
 import { usageRoute } from "./routes/usage/route"
 
@@ -29,3 +30,6 @@ server.route("/v1/embeddings", embeddingRoutes)
 
 // Anthropic compatible endpoints
 server.route("/v1/messages", messageRoutes)
+
+// OpenAI Responses API endpoint (for models like gpt-5.4)
+server.route("/v1/responses", responsesRoutes)
