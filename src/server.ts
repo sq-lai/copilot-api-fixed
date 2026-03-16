@@ -33,3 +33,4 @@ server.route("/v1/messages", messageRoutes)
 
 // OpenAI Responses API endpoint (for models like gpt-5.4)
 server.route("/v1/responses", responsesRoutes)
+server.route("/responses", responsesRoutes)
